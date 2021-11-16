@@ -33,24 +33,48 @@ Manage Jenkins -> Manage Plugins
 ## 4 Sonarqube Create a token api
 * Security -> User:  (sonarqubeapitoken)
   
-## jenkins for sonarqube
+## 5 jenkins for sonarqube
 * Create a credential type text with (sonarqubeapitoken) named (sonarqubeapitoken)  
   
 * Manage Jenkins -> Configure System ->SonarQube servers
   name: sonarque, URL: http://<ipsonar>:<port>, credential=(sonarqubeapitoken)
   
 
-## 4 Sonarqube
+## 6 Sonarqube
 * Create a project
 * Create a key
 * Create a webhook for jenkins to notify jenkins that the job is finish
   Configuration -> Webhook: 
   Values: name=jenkins	https://<jenkinsexternalip>:<port>/sonarqube-webhook
   
-## 5 Code source In jenkins file
+## 7 Code source In jenkins file
 * Build section
 * Sonar section
 * sonar-project.properties 
+* java
+```
+cat sonar-project.properties
+sonar.projectKey=java-swagger-demo
+sonar.sources=src
+sonar.java.binaries=target/classes,target/test-classes
+sonar.language=java
+sonar.sourceEncoding=UTF-8
+sonar.verbose=true
+```
+
+* Python
+```
+cat sonar-project.properties
+sonar.projectKey=jenkins-test-pipeline
+sonar.projectVersion=1.0
+sonar.sources=app
+sonar.language=py
+sonar.sourceEncoding=UTF-8
+sonar.tests=tests
+sonar.python.coverage.reportPaths=coverage.xml
+sonar.verbose=true
+```
+
 
 
 
