@@ -17,7 +17,7 @@ Manage Jenkins -> Manage Plugins
 * Create a Webhook to jenkins:  
   https://<jenkinsexternalip>:<port>/github-webhook/ set the (jenkinapitoken) as secret
 
-## 3 Jenkins
+## 3 Jenkins for github
 * Create a github credential 
   user/password (user=davidboukari, password=(githubapitoken)  description: (davidboukarigitwithgithubtoken)
   
@@ -29,7 +29,16 @@ Manage Jenkins -> Manage Plugins
   Type: github  
   set the repo  
   Credential: (davidboukarigitwithgithubtoken)
-   
+
+## 4 Sonarqube Create a token api
+* Security -> User:  (sonarqubeapitoken)
+  
+## jenkins for sonarqube
+* Create a credential type text with (sonarqubeapitoken) named (sonarqubeapitoken)  
+  
+* Manage Jenkins -> Configure System ->SonarQube servers
+  name: sonarque, URL: http://<ipsonar>:<port>, credential=(sonarqubeapitoken)
+  
 
 ## 4 Sonarqube
 * Create a project
