@@ -47,7 +47,7 @@ Manage Jenkins -> Manage Plugins
   Configuration -> Webhook: 
   Values: name=jenkins	https://<jenkinsexternalip>:<port>/sonarqube-webhook
   
-## 7 Code source In jenkins file
+## 7 Code source in jenkins file
 * Build section
 * Sonar section
 * sonar-project.properties 
