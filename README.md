@@ -1,5 +1,7 @@
 # github-jenkins-sonar
 
+* https://www.linkedin.com/pulse/integrating-github-webhooks-jenkins-automate-unit-becerril-dom%C3%ADnguez
+
 ## Pipeline Github -> Jenkins -> Sonarqube
 
 ### 1 Jenkins
