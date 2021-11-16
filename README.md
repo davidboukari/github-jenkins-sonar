@@ -7,7 +7,7 @@
 * Install github plugins
 
 ## 2 Github
-* Create a personal token: 
+* Create a personal token:  
 Profile -> Settings -> Developer Settings or https://github.com/settings/tokens
 * Create a Webhook to jenkins
 * Create a github token with right
