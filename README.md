@@ -31,10 +31,13 @@ Manage Jenkins -> Manage Plugins
   Credential: (davidboukarigitwithgithubtoken)
    
 
-## 4 Sonarque
+## 4 Sonarqube
 * Create a project
 * Create a key
-
+* Create a webhook for jenkins to notify jenkins that the job is finish
+  Configuration -> Webhook: 
+  Values: name=jenkins	https://<jenkinsexternalip>:<port>/sonarqube-webhook
+  
 ## 5 Code source In jenkins file
 * Build section
 * Sonar section
